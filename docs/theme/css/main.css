@@ -1,13 +1,13 @@
 :root {
-    --green-primary: #73ba25;
-    --green-secondary: #173f4f;
-    --green-tertiary: #35b9ab;
+    --green-highlight: #7fcdbb;
+    --grey-primary: #383838;
+    --green-base: #009B77;
+    --green-midtone: #4cb99f;
 
     --green-additional: #00a489;
     --green-additional-dark: #6da741;
     --blue-additional: #21a4df;
 
-    --dark: #343a40;
 }
 
 body {
@@ -17,8 +17,8 @@ body {
 /* specifics */
 
 #above-the-fold {
-    background-color: var(--green-secondary);
-    color: var(--green-tertiary);
+    background-color: var(--grey-primary);
+    color: var(--green-base);
     padding: 10px;
     text-align: center;
 }
@@ -49,14 +49,14 @@ body {
 .two-grid .grid-item {
     width: 40%;
     margin: 10px;
-    background: var(--green-secondary);
+    background: var(--grey-primary);
     color: white;
     border-radius: 10px;
     padding: 15px 20px;
 }
 
 .two-grid .grid-item .grid-title {
-    color: var(--green-tertiary);
+    color: white;
     font-size: 1.6rem;
     padding-bottom: 10px;
     display: flex;
@@ -120,13 +120,13 @@ ul li {
 }
 
 section:nth-of-type(even) {
-    background: #f6f6f6;
-    color: var(--green-secondary);
+    background: var(--grey-primary);
+    color: white;
 }
 
 .warning {
     background: #fdfdae;
-    color: var(--dark);
+    color: var(--grey-primary);
     padding: 10px;
     width: 420px;
     max-width: 85%;
@@ -155,18 +155,18 @@ section:nth-of-type(even) {
 }
 
 .button.cta {
-    background: var(--green-tertiary);
+    background: var(--green-base);
     color: white;
 }
 
 .button.secondary {
-    background: var(--green-secondary);
-    color: var(--green-tertiary) !important;
-    border: 1px solid var(--green-tertiary);
+    background: var(--grey-primary);
+    color: white !important;
+    border: 1px solid var(--green-base);
 }
 
 .button:hover {
-    background: var(--green-primary);
+    background: var(--green-highlight);
 }
 
 .button.secondary:hover {
@@ -180,8 +180,8 @@ section:nth-of-type(even) {
 }
 
 #content {
-    background: white;
-    color: var(--dark);
+    background: var(--green-midtone);
+    color: var(--grey-primary);
 }
 
 footer {
@@ -230,3 +230,4 @@ footer {
 
     }
 }
+
