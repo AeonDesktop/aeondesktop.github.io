@@ -132,6 +132,10 @@ section:nth-of-type(even) {
     color: white;
 }
 
+section:nth-of-type(odd) a{
+    color: var(--grey-primary);
+}
+
 .warning {
     background: #fdfdae;
     color: var(--grey-primary);
