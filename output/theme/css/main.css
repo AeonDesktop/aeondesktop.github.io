@@ -21,7 +21,7 @@ body {
 #above-the-fold {
     background-color: var(--grey-primary);
     color: var(--green-base);
-    padding: 10px;
+    padding: 10px 10px 20px 10px;
     text-align: center;
     -moz-box-shadow: inset 0 -10px 10px -10px #000000;
     -webkit-box-shadow: inset 0 -10px 10px -10px #000000;
