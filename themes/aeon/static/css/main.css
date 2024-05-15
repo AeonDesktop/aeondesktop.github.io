@@ -203,7 +203,6 @@ section:nth-of-type(odd) a{
 footer {
     background: var(--grey-primary);
     color: white;
-    border-top: 1px solid #d4d4d4;
     padding: 20px;
 }
 
