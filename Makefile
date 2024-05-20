@@ -68,5 +68,10 @@ devserver-global:
 publish:
 	"$(PELICAN)" "$(INPUTDIR)" -o "$(OUTPUTDIR)" -s "$(PUBLISHCONF)" $(PELICANOPTS)
 
+watch:
+	"$(PELICAN)" -r -l content
+
+pages:
+	./create-pages.sh
 
 .PHONY: html help clean regenerate serve serve-global devserver devserver-global publish 
