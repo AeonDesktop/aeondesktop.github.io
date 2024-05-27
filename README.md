@@ -4,13 +4,15 @@ Repo for the website at [aeondesktop.github.io](https://aeondesktop.github.io)
 
 ## Developing
 
-This website is made with [Pelican](https://getpelican.com/)
+This website is made with [Pelican](https://getpelican.com/), you will need to install this to serve and regenerate the site.
+
+You will also need `make`, which should be in your distribution's repos.
 
 ### Running Locally
 
 To serve and watch for changes, run this command in a terminal:
 ```
-pelican -r -l
+make watch
 ```
 This will watch for changes to any of the files and re-compile the website for testing.
 
@@ -23,7 +25,7 @@ The CSS lives at `themes/aeon/static/css/main.css`. Feel free to put any other f
 Once you are happy with your changes, execute the `create-pages.sh` script to build the site for deployment:
 
 ```
-./create-pages.sh
+make pages
 ```
 
 #### Committing
