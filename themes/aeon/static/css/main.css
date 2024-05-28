@@ -108,6 +108,11 @@ ul li {
     padding: 5px 0;
 }
 
+.ib-5 {
+    display: inline-block;
+    margin: 5px 0px;
+}
+
 .mt-5 {
     margin-top: 20px;
 }
