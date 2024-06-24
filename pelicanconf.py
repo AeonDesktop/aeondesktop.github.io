@@ -1,5 +1,5 @@
-AUTHOR = 'openSUSE Contributors'
-SITENAME = 'openSUSE Aeon'
+AUTHOR = 'Aeon Contributors'
+SITENAME = 'Aeon'
 SITEURL = ""
 
 PATH = "content"
