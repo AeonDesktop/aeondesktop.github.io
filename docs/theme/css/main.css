@@ -136,6 +136,11 @@ ul li {
     font-size: 1.2rem;
 }
 
+.text-md-centered{
+    font-size: 1.2rem;
+    text-align: center;
+}
+
 section:nth-of-type(even) {
     background: var(--grey-primary);
     color: white;
