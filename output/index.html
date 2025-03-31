@@ -11,183 +11,183 @@
 
 <body>
         <main>
-          <div id="above-the-fold">
-<div class="above-the-fold-wrapper">
-    <img class="logo" src="./theme/images/logo.svg">
-    <h1>Aeon Desktop</h1>
-    <div class="mb-5 text-white text-lg">The Linux Desktop for people who want to "get stuff done"</div>
-    <div class="button-row">
-        <a class="button cta" href="https://download.opensuse.org/tumbleweed/appliances/Aeon-Installer.x86_64.raw.xz">Download</a>
-        <a class="button cta" href="https://en.opensuse.org/Portal:Aeon/InstallGuide">Install Guide</a>
-        <a class="button secondary" href="https://en.opensuse.org/Portal:Aeon">Documentation</a>
-    </div>
-</div>
-<div class="warning">
-    <img src="./theme/images/exclamation-icon.svg"> <span>Aeon is still in a <b>Release Candidate</b>
-        stage!</span>
-</div>
-          </div>
+        <header class="header">
+            <div class="container header-container">
+                <a href="#" class="header-logo">
+                    <img class="logo" src="./theme/images/logo.svg">
+                    Aeon Desktop
+                </a>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#who-is-aeon-for">Who is Aeon For?</a></li>
+                        <li><a href="#community">Community</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
           <div id="content">
-<section>
-    <div class="content">
-        <h2>Features At a Glance</h2>
-
-        <div class="two-grid">
-            <div class="grid-item">
-                <div class="grid-title">
-                    <img src="./theme/images/repairing-icon.svg">
-                    Automated Maintenance
-                </div>
-                <div class="grid-body">
-                    Daily system updates happen automatically while you work. Your running system is not
-                    affected until you reboot, keeping your workday consistent and avoiding any unexpected issues with
-                    your apps.
-                </div>
+<section class="section-jumbotron">
+    <div class="container">
+        <div class="warning-container">
+            <div class="warning" role="alert">
+                <img src="./theme/images/alert-line.svg">
+                <span>Aeon is still in a Release Candidate stage!</span>
             </div>
-            <div class="grid-item">
-                <div class="grid-title">
-                    <img src="./theme/images/compare-arrow-icon.svg">
-                    Minimal Yet Functional
-                </div>
-                <div class="grid-body">The base system is kept small and simple, but with everything you need for getting
-                    straight on with your tasks - including programming, gaming, media production and clerical work.
-                </div>
+        </div>
+        <div class="jumbotron-container">
+            <div class="jumbotron-image-wrapper">
+                <iframe class="jumbotron-image" width="600" height="360" src="https://www.youtube.com/embed/1K_kGbmlewo" title="openSUSE Aeon - Desktop Linux Finally Done Right? Video on YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
-            <div class="grid-item">
-                <div class="grid-title">
-                    <img src="./theme/images/box-icon.svg">
-                    Distrobox
-                </div>
-                <div class="grid-body">Aeon ships with Distrobox configured to launch Tumbleweed containers, perfect for
-                    your development tools and projects.</div>
-            </div>
-            <div class="grid-item">
-                <div class="grid-title">
-                    <img src="./theme/images/cube-icon.svg">
-                    Flatpak
-                </div>
-                <div class="grid-body">
-                    <a href="https://flatpak.org/" target="_blank">Flatpak</a> is set up ready for you to find your
-                    favourite apps from <a href="https://flathub.org" target="_blank">flathub</a>.
-                </div>
+            <div class="jumbotron-content">
+                <h1 class="jumbotron-title">Welcome to Aeon Desktop</h1>
+                <p class="jumbotron-text">The Linux Desktop for people who want to "get stuff done"</p>
+                <a class="jumbotron-button" target="_blank" href="https://download.opensuse.org/tumbleweed/appliances/Aeon-Installer.x86_64.raw.xz">Download</a>
+                <a class="jumbotron-button" target="_blank" href="https://en.opensuse.org/Portal:Aeon/InstallGuide">Install Guide</a>
             </div>
         </div>
     </div>
 </section>
 
-<section>
-    <div class="content">
-        <h2>Who Is Aeon For?</h2>
-
-        <p class="text-md">Aeon is great for anyone who wants a computer that "just works"; in particular it is perfect
-            for
-            the "lazy developer" who prefers to spend their time getting things done while letting their desktop take care
-            of
-            itself. The OS is static, automated and reliable, letting you focus on your apps and work.</p>
-
-        <p class="text-md">Aeon has a clear vision of a consistent and predictable experience across all installs, which
-            may
-            not be the perfect environment for a hardcore system-tinkerer - we recommend openSUSE Tumbleweed for
-            scratching
-            that itch. </p>
-    </div>
-</section>
-
-<section>
-    <div class="content">
-        <h2>Transactional Updates</h2>
-
-        <ul>
-            <li class="text-md">
-                Aeon makes use of <a href="https://github.com/openSUSE/transactional-update">transactional-update</a> to
-                provide atomic updates utilising the power of btrfs snapshots. Your system is updated inside a new
-                snapshot
-                leaving your current system unaffected.
-            </li>
-
-            <li class="text-md">
-                If an update should fail for any reason the new snapshot can be discarded, ensuring your system remains
-                bootable and functional regardless.
-            </li>
-
-            <li class="text-md">
-                Snapshots contain your configuration in <code>/etc</code>, allowing you to rollback configuration
-                changes
-                too.
-            </li>
-
-            <li class="text-md">
-                Your current RPM packages are supported by transactional-update, as well as most of the packages in
-                Aeon's repos.
-            </li>
-        </ul>
-    </div>
-</section>
-
-<section>
-    <div class="content">
-        <h2>Further Information</h2>
-
-        <p class="text-md">
-            For a deep dive on the origins and use-cases for Aeon, check out this video:
-        </p>
-
-        <p><a class="button cta" href="https://www.youtube.com/watch?v=lKYLF1tA4Ik">Video on YouTube</a></p>
-
-        <br />
-
-        <p class="text-md">For technical details and how-tos, head over to the Wiki:</p>
-
-        <p><a class="button cta" href="https://en.opensuse.org/Portal:Aeon">Aeon Wiki</a></p>
-    </div>
-</section>
-
-<section>
-    <div class="content">
-        <h2>Get In Touch</h2>
-
-        <div class="two-grid">
-            <div class="grid-item">
-                <div class="grid-title">
-                    <img src="./theme/images/bug-icon.svg">
-                    Reporting Bugs
-                </div>
-                <div class="grid-body">
-                    <p>
-                        Please report bugs on <a
-                            href="https://bugzilla.opensuse.org/enter_bug.cgi?product=openSUSE+Aeon&format=guided">Bugzilla.</a>
-                    </p>
-                    <p>
-                        See <a href="https://en.opensuse.org/openSUSE:Submitting_bug_reports">Submitting Bug Reports</a>
-                        for
-                        details on how to file bugs.
+    <section id="features" class="section-features">
+        <div class="container">
+            <h2 class="features-title">Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3 class="feature-title">
+                      <div class="feature-icon">
+                          <img class="flip" src="./theme/images/tools-line.svg">
+                      </div>
+                      Automated Maintenance
+                    </h3>
+                    <p class="feature-text">
+                      Daily system updates happen automatically while you work. Your running system is not
+                      affected until you reboot, keeping your workday consistent and avoiding any unexpected issues with
+                      your apps.
                     </p>
                 </div>
-            </div>
-            <div class="grid-item">
-                <div class="grid-title">
-                    <img src="./theme/images/question-mark-icon.svg">
-                    Asking Questions
-                </div>
-                <div class="grid-body">
-                    <p>
-                        Drop by one of the chat rooms to discuss the project:
+                <div class="feature-card">
+                    <h3 class="feature-title">
+                      <div class="feature-icon">
+                          <img class="flip" src="./theme/images/fullscreen-exit-line.svg">
+                      </div>
+                      Minimal Yet Functional
+                    </h3>
+                    <p class="feature-text">
+                      The base system is kept small and simple, but with everything you need for getting
+                      straight on with your tasks - including programming, gaming, media production and clerical work.
                     </p>
-                    <p class="button-row">
-                        <a class="button cta" href="https://t.me/openSUSE_Aeon">Telegram</a>
-                        <a class="button cta" href="https://matrix.to/#/#aeon:opensuse.org">Matrix</a>
-                        <a class="button cta" href="https://www.reddit.com/r/AeonDesktop/">Reddit</a>
+                </div>
+                <div class="feature-card">
+                    <h3 class="feature-title">
+                      <div class="feature-icon">
+                          <img class="flip" src="./theme/images/distrobox.svg">
+                      </div>
+                      Distrobox
+                    </h3>
+                    <p class="feature-text">
+                      Aeon ships with <a href="https://distrobox.it/" target="_blank">Distrobox</a> configured to launch Tumbleweed containers, perfect for
+                      your development tools and projects in their own little containerized environments.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <h3 class="feature-title">
+                      <div class="feature-icon">
+                          <img class="flip" src="./theme/images/flatpak.svg">
+                      </div>
+                      Flatpak
+                    </h3>
+                    <p class="feature-text">
+                      <a href="https://flatpak.org/" target="_blank">Flatpak</a> is already set up to let you install any app from a vast catalogue available from <a href="https://flathub.org/" target="_blank">Flathub</a>. Just click install and go.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <h3 class="feature-title">
+                      <div class="feature-icon">
+                          <img class="flip" src="./theme/images/refresh-line.svg">
+                      </div>
+                      Transactional Update
+                    </h3>
+                    <p class="feature-text">
+                      The same base technologies powering MicroOS are here, to ensure long and steady operation of your computer and its software.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <h3 class="feature-title">
+                      <div class="feature-icon">
+                          <img class="flip" src="./theme/images/user-community-line.svg">
+                      </div>
+                      Community
+                    </h3>
+                    <p class="feature-text">
+                      Large, knowledgable community gives you an opportunity to learn, troubleshoot and make full use of your new operating system with help of other people.
                     </p>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
+    <section id="who-is-aeon-for" class="section-who-is-for">
+        <div class="container">
+            <h2 class="who-is-for-title">Who is Aeon For?</h2>
+            <div class="who-is-for-grid">
+                <div class="who-is-for-card">
+                    <h3>Beginners</h3>
+                    <p>The OS is static, automated and reliable, letting you focus on your apps and work.</p>
+                </div>
+                <div class="who-is-for-card">
+                    <h3>"Lazy Developer"</h3>
+                    <p>Spend your time getting things done while letting your desktop take care of itself.</p>
+                </div>
+                <div class="who-is-for-card">
+                    <h3>Anyone</h3>
+                    <p>If you like a computer that "just works".</p>
+                </div>
+            </div>
         </div>
+    </section>
+
+    <section id="community" class="section-community">
+        <div class="container">
+            <h2 class="community-title">Join the Community</h2>
+            <p class="community-text">
+              The Aeon community is full of passionate, friendly, and talented individuals working together to build something amazing. Whether you're here to contribute, learn, or just hang out, you're always welcome!
+            </p>
+            <p class="community-text">
+              Looking for technical details and how-tos? Check out the <a target="_blank" href="https://en.opensuse.org/Portal:Aeon">Aeon Wiki</a> for in-depth guides and documentation.
+            </p>
+            <p class="community-text">
+              Have a bug to report? We appreciate your help in making Aeon even better! Head over to <a target="_blank" href="https://bugzilla.opensuse.org/enter_bug.cgi?product=openSUSE+Aeon&format=guided">Bugzilla</a> and follow our <a target="_blank" href="https://en.opensuse.org/openSUSE:Submitting_bug_reports">Submitting Bug Reports</a> guide to ensure your report is detailed and helpful.
+            </p>
+            <p class="community-text">
+              Got questions or just want to chat? Join one of our chat rooms, where you’ll find helpful folks ready to discuss the project, share ideas, and collaborate in real time. We can’t wait to meet you!
+            </p>
+            <div class="community-links">
+                <a href="https://github.com/AeonDesktop/" target="_blank" class="community-link">
+                    <img class="flip" src="./theme/images/github-line.svg">
+                    GitHub
+                </a>
+                <a href="https://t.me/openSUSE_Aeon" target="_blank" class="community-link">
+                    <img class="flip" src="./theme/images/telegram-line.svg">
+                    Telegram
+                </a>
+                <a href="https://matrix.to/#/#aeon:opensuse.org" target="_blank" class="community-link">
+                    <img class="flip" src="./theme/images/matrix-line.svg">
+                    Matrix
+                </a>
+                <a href="https://www.reddit.com/r/AeonDesktop/" target="_blank" class="community-link">
+                    <img class="flip" src="./theme/images/reddit-line.svg">
+                    Reddit
+                </a>
+            </div>
+        </div>
+    </section>
+          </div>
         </main>
-        <footer>
-          © Aeon contributors
+        <footer class="footer">
+            <div class="container">
+                 <p>© 2024 Aeon Contributors</p>
+            </div>
         </footer>
 </body>
 </html>
