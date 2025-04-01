@@ -1,0 +1,1 @@
+alert-line.svg, fullscreen-exit-line.svg, github-line.svg, reddit-line.svg, refresh-line.svg, telegram-line.svg, tools-line.svg, user-community-line.svg are licensed under the terms of Apache 2.0 License as specified by https://github.com/Remix-Design/RemixIcon/blob/master/License
