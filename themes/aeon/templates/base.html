@@ -40,18 +40,30 @@
 
 <body>
         <main>
-          <div id="above-the-fold">
-          {% block above_the_fold %}
-            <h1>Aeon</h1>
-          {% endblock above_the_fold%}
-          </div>
+        <header class="header">
+            <div class="container header-container">
+                <a href="#" class="header-logo">
+                    <img class="logo" src="{{SITEURL}}/theme/images/logo.svg">
+                    Aeon Desktop
+                </a>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#who-is-aeon-for">Who is Aeon For?</a></li>
+                        <li><a href="#community">Community</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
           <div id="content">
-        {% block content %}
-        {% endblock %}
-        </div>
+            {% block content %}
+            {% endblock %}
+          </div>
         </main>
-        <footer>
-          © Aeon contributors
+        <footer class="footer">
+            <div class="container">
+                 <p>© 2024 Aeon Contributors</p>
+            </div>
         </footer>
 </body>
 </html>
